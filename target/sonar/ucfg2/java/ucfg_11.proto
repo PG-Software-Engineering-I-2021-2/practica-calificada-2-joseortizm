@@ -1,90 +1,9 @@
 
-)Principal#isHasToIncreaseOneExtraPoint()Z^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java; ;(0"11*ø
-2^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java> >(Lò
-ï
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java> >(L%
-yearlyTeachersjava.util.Map$Entry"__id*
-""µ
-≤
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java> >(L%
-yearlyTeachersjava.util.Map$Entry"
-__arrayGet*
-
-%1java.util.Set*
-""*
-10
-1*ò
-4^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaA A(3Å
-
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaA A(3
-teacherPair"__id*
-""¶
-£
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaA A(3
-teacherPair"
-__arrayGet*
-
-teachersjava.util.List*
-""*
-2
-7*•
-7^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaB B(∫∑
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaB B((
-%4java.lang.Boolean"Pair#second()Ljava/lang/Object;*
-
-teacherPair2second()*
-4*Î
-9^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java@8 @(F‡›
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java@8 @(Q
-%3java.util.List"0java.util.Map$Entry#getValue()Ljava/lang/Object;*'
-%
-yearlyTeachersjava.util.Map$Entry2
-getValue()ù
-ö
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java@ @(R
-teachersjava.util.List"__id*
-
-%3java.util.List*
-4*Œ
-10^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java? ?(!ﬂ‹
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java?% ?(<
-%2java.lang.Integer".java.util.Map$Entry#getKey()Ljava/lang/Object;*'
-%
-yearlyTeachersjava.util.Map$Entry2getKey()*
-2
-9*÷
-11^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java>O >(_£
-†
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java>O >(_
-%0java.util.Map"__id*#*!
-	Principal"
-allYearsTeachersƒ¡
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java>O >(j
-%1java.util.Set"'java.util.Map#entrySet()Ljava/util/Set;*
-
-%0java.util.Map2
-entrySet()*
-2*Õ
-1^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaK K()"h
-^
-T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaK K(*
-""B
-	Principal
+Administrativo#getTipo()Ic
+Y/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Administrativo.java ("1*◊
+1c
+Y/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Administrativo.java ("m
+c
+Y/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Administrativo.java (
+""B
+Administrativo

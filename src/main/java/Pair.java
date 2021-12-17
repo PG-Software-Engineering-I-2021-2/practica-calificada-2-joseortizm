@@ -1,17 +1,18 @@
-public final class Pair<FirstType, SecondType> {
-    final private FirstType first;
-    final private SecondType second;
 
-    public Pair(FirstType first, SecondType second) {
+public final class Pair<F, S> {
+    private final F first;
+    private final S second;
+
+    public Pair(F first, S second) {
         this.first  = first;
         this.second = second;
     }
 
-    public FirstType first() {
+    public F first() {
         return first;
     }
 
-    public SecondType second() {
+    public S second() {
         return second;
     }
 }

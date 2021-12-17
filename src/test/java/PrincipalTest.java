@@ -1,4 +1,5 @@
 
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ public class PrincipalTest {
     void fail_given_there_are_no_exams() {
         Principal studentGradeCalculator = new Principal(2019);
 
-        final List<Pair<Integer, Float>> examsGrades = Collections.emptyList();
+        final List<Pair<Integer, Float>> examsGrades              = Collections.emptyList();
         final boolean  hasReachedMinimumClasses = true;
         Assert.assertEquals(0.0, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
     }
@@ -22,7 +23,7 @@ public class PrincipalTest {
         final List<Pair<Integer, Float>> examsGrades              = List.of(new Pair<>(100, 5f));
         final boolean                    hasReachedMinimumClasses = true;
 
-        Assert.assertEquals(5, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
+        Assert.assertEquals(6, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
     }
 
     @Test
@@ -43,7 +44,7 @@ public class PrincipalTest {
         );
         final boolean hasReachedMinimumClasses = true;
 
-        Assert.assertEquals(5, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
+        Assert.assertEquals(6, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
     }
 
     @Test
@@ -56,10 +57,9 @@ public class PrincipalTest {
         );
         final boolean hasReachedMinimumClasses = true;
 
-        Assert.assertEquals(4.5f, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
+        Assert.assertEquals(5.5f, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
     }
 
-    // hasReachedMinimumClasses
 
     @Test
     void fail_when_there_are_no_exams_and_has_not_attended_the_minimum_classes() {
@@ -112,7 +112,6 @@ public class PrincipalTest {
         Assert.assertEquals(0, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
     }
 
-    // Weight
 
     @Test
     void validate_all_exam_grades_weight_below_100() {
@@ -140,7 +139,6 @@ public class PrincipalTest {
         Assert.assertEquals(-1, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
     }
 
-    // hasToRaiseOnePoint
 
     @Test
     void not_increase_one_extra_point_if_there_is_not_any_benevolent_teacher_in_the_year_to_calculate_grades() {
@@ -149,7 +147,7 @@ public class PrincipalTest {
         final List<Pair<Integer, Float>> examsGrades              = List.of(new Pair<>(100, 9.8f));
         final boolean                    hasReachedMinimumClasses = true;
 
-        Assert.assertEquals(9.8f, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
+        Assert.assertEquals(10f, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
     }
 
     @Test
@@ -170,5 +168,14 @@ public class PrincipalTest {
         final boolean                    hasReachedMinimumClasses = true;
 
         Assert.assertEquals(10, studentGradeCalculator.calculateGrades(examsGrades, hasReachedMinimumClasses));
+    }
+
+    @Test
+    void has_to_print_names_of_teachers_that_increases_grades() {
+        Principal studentGradeCalculator = new Principal(2020);
+        final List<Pair<Integer, Float>> examsGrades              = List.of(new Pair<>(100, 9.8f));
+        final boolean                    hasReachedMinimumClasses = true;
+        List<String> teachersThatIncreaseGrades = studentGradeCalculator.imprimirProfesorOtorgaextra();
+        Assert.assertEquals(4, teachersThatIncreaseGrades.size());
     }
 }

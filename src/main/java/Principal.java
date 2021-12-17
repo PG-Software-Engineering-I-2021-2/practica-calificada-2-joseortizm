@@ -1,31 +1,26 @@
-import java.util.AbstractMap;
-import java.util.List;
-import java.util.Map;
-
-
-
-import java.util.AbstractMap;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.logging.Logger;
 
 public class Principal {
 
-    final private Map<Integer, List<Pair<Teacher, Boolean>>> allYearsTeachers = Map.ofEntries(
+    public final Logger logger = Logger.getLogger(Principal.class.getName());
+
+    private final  Map<Integer, List<Pair<Teacher, Boolean>>> allYearsTeachers = Map.ofEntries(
             new AbstractMap.SimpleImmutableEntry<>(
                     2020,
                     List.of(
-                            new Pair<>( new ProfesorTP("Josefina"), true),
-                            new Pair<>( new ProfesorTP("Edonisio"), true),
-                            new Pair<>( new ProfesorTP("Edufasio"), false)
+                            new Pair<>( new TeacherTC(1,"Josefina"), true),
+                            new Pair<>( new TeacherTC(1,"Edonisio"), true),
+                            new Pair<>( new TeacherTC(1,"Edufasio"), false),
+                            new Pair<>( new TeacherTC(0,"Juan"), true)
                     )
             ),
             new AbstractMap.SimpleImmutableEntry<>(
                     2019,
                     List.of(
-                            new Pair<>( new ProfesorTP("Eduarda"), false),
-                            new Pair<>( new ProfesorTP("Abelardo"), false),
-                            new Pair<>( new ProfesorTP("Francisca"), false)
+                            new Pair<>( new TeacherTC(1,"Eduarda"), false),
+                            new Pair<>( new TeacherTC(1,"Abelardo"), true),
+                            new Pair<>( new TeacherTC(1,"Francisca"), false)
                     )
             )
     );
@@ -34,43 +29,65 @@ public class Principal {
     public Principal(int yearToCalculate) {
         this.yearToCalculate = yearToCalculate;
     }
+
     public float calculateGrades(final List<Pair<Integer, Float>> examsStudents, final boolean hasReachedMinimumClasses) {
         if (!examsStudents.isEmpty()) {
-
-
+            boolean hasToIncreaseOneExtraPoint = isHasToIncreaseOneExtraPoint();
             float gradesSum       = getGradesSum(examsStudents);
             int   gradesWeightSum = getGradesWeightSum(examsStudents);
 
 
 
-            if (gradesWeightSum == 100){
-                if (hasReachedMinimumClasses){
 
-                    if (isHasToIncreaseOneExtraPoint()) {
-                        return Float.min(10f, gradesSum + 1);
-                    }else {
-                        return gradesSum;
-                    }
-                }else {
-                    return 0f;
-                }
-            }
-
-            if(gradesWeightSum > 100){
-                return -1f;
-            }
-
-
-            return -2f;
-
-
-
-
+            return computeGrades(hasReachedMinimumClasses, hasToIncreaseOneExtraPoint, gradesSum, gradesWeightSum);
         } else {
             return 0f;
         }
+    }
+
+    private float computeGrades(boolean hasReachedMinimumClasses,
+                                boolean hasToIncreaseOneExtraPoint,
+                                float gradesSum,
+                                int gradesWeightSum) {
+
+        if (gradesWeightSum == 100) {
+            if (hasReachedMinimumClasses) {
+                if (hasToIncreaseOneExtraPoint) {
+                    return Float.min(10f, gradesSum + 1);
+                } else {
+                    return gradesSum;
+                }
+            } else {
+                return 0f;
+            }
+        }
+
+        if (gradesWeightSum > 100) {
+            return -1f;
+        }else {
+            return -2f;
+        }
 
 
+
+    }
+
+    private boolean isHasToIncreaseOneExtraPoint() {
+        boolean hasToIncreaseOneExtraPoint = false;
+
+        for (Map.Entry<Integer, List<Pair<Teacher, Boolean>>> yearlyTeachers : allYearsTeachers.entrySet()) {
+            if (yearToCalculate == yearlyTeachers.getKey()) {
+                List<Pair<Teacher, Boolean>> teachers = yearlyTeachers.getValue();
+                for (Pair<Teacher, Boolean> teacher : teachers) {
+                    if (teacher.first().getTipo() == 1) {
+                        if (teacher.second()) {
+                            hasToIncreaseOneExtraPoint = true;
+                        }
+                    }
+                }
+            }
+        }
+        return hasToIncreaseOneExtraPoint;
     }
 
     private int getGradesWeightSum(List<Pair<Integer, Float>> examsStudents) {
@@ -91,46 +108,21 @@ public class Principal {
     }
 
 
-    private boolean isHasToIncreaseOneExtraPoint() {
-        boolean hasToIncreaseOneExtraPoint = false;
-
-        for (Map.Entry<Integer, List<Pair<Teacher, Boolean>>> yearlyTeachers : allYearsTeachers.entrySet()) {
-            if (!(yearToCalculate != yearlyTeachers.getKey())) {
-                List<Pair<Teacher, Boolean>> teachers = yearlyTeachers.getValue();
-                for (Pair<Teacher, Boolean> teacher : teachers) {
-                    if (teacher.second() != true) {
-                        continue;
-                    }
-                    hasToIncreaseOneExtraPoint = true;
-                }
-            } else {
-                continue;
-            }
-        }
-        return hasToIncreaseOneExtraPoint;
-    }
-
-
-
-    public void printTeachersWithExtraPoint(){
+    public List<String> imprimirProfesorOtorgaextra(){
+        List<String> teachersThatIncrease = new LinkedList<String>(Arrays.asList());
         for (List<Pair<Teacher, Boolean>> teachers : this.allYearsTeachers.values()){
             for (Pair<Teacher, Boolean> pair : teachers){
-                if(pair.second()){
-                    System.out.println(pair.first());
+                if(pair.second()) {
+                    teachersThatIncrease.add(pair.first().getNombre());
                 }
             }
         }
+
+        return teachersThatIncrease;
     }
-
-
 
     public static void main(String[] args) {
         System.out.println("Hola");
-
-
+        }
     }
 
-
-
-
-}

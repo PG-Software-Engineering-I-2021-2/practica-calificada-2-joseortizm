@@ -1,38 +1,26 @@
-abstract public class Student {
-    //private String _Nombre;
-    //private int _Tipo;
-    int _notaBase = 11;
-    abstract int Grado();
-}
 
-class Pregrado extends  Student{
-    private String _Nombre ;
-    Pregrado(String nombre){
-        this._Nombre =nombre;
-    }
-    public int Grado(){
-        return _notaBase;
-    }
-}
+public class Student {
+    private String _Nombre;
+    private int _Tipo;
+    private int _notaBase =11;
+    static final int Pregado = 0;
+    static final int Maestria = 1;
+    static final int Doctorado = 2;
 
-class Maestria extends  Student{
-    private String _Nombre ;
-    Maestria(String nombre){
-        this._Nombre =nombre;
+    Student(int type, String nombre) {
+        _Tipo = type;
+        _Nombre = nombre;
     }
-    public int Grado(){
-        return _notaBase + 1;
-    }
-}
-
-class Doctorado extends  Student{
-    private String _Nombre ;
-    Doctorado(String nombre){
-        this._Nombre =nombre;
-    }
-    public int Grado(){
-        return _notaBase + 2;
+    int Grado() {
+        switch (_Tipo) {
+            case Pregado:
+                return _notaBase;
+            case Maestria:
+                return _notaBase + 1;
+            case Doctorado:
+                return _notaBase + 2;
+            default:
+                throw new RuntimeException("Empleado incorrecto");
+        }
     }
 }
-
-

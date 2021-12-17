@@ -1,9 +1,116 @@
 
-Doctorado#Grado()I\
-R/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Student.java! !("1*…
-1\
-R/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Student.java" "("f
-\
-R/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Student.java" "(
+)Principal#isHasToIncreaseOneExtraPoint()Z^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaJ J(0"10*æ
+2^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaM M(Lò
+ï
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaM M(L%
+yearlyTeachersjava.util.Map$Entry"__id*
+""µ
+≤
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaM M(L%
+yearlyTeachersjava.util.Map$Entry"
+__arrayGet*
+
+%1java.util.Set*
+""*
+9
+1*ò
+3^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaP P(3Å
+
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaP P(3
+teacherPair"__id*
+""¶
+£
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaP P(3
+teacherPair"
+__arrayGet*
+
+teachersjava.util.List*
+""*
+2
+6*®
+5^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaR R(#ä
+á
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaR R((
+%6java.lang.Boolean"__id*
+""∫∑
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaR0 R(@
+%7java.lang.Boolean"Pair#second()Ljava/lang/Object;*
+
+teacherPair2second()Û
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaR R(A
+%8boolean"-java.lang.Boolean#equals(Ljava/lang/Object;)Z*
+
+%6java.lang.Boolean*
+
+%7java.lang.Boolean2equals(Ljava/lang/Object;)*
+3*Ω
+6^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaQ Q(Æ´
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaQ Q('
+%4Teacher"Pair#first()Ljava/lang/Object;*
+
+teacherPair2first()ûõ
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaQ Q(1	
+%5int"Teacher#getTipo()I*
+
+%4Teacher2	getTipo()*
+3
+5*Î
+8^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaO8 O(F‡›
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaO8 O(Q
+%3java.util.List"0java.util.Map$Entry#getValue()Ljava/lang/Object;*'
+%
+yearlyTeachersjava.util.Map$Entry2
+getValue()ù
+ö
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaO O(R
+teachersjava.util.List"__id*
+
+%3java.util.List*
+3*Õ
+9^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaN N(ﬂ‹
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaN# N(:
+%2java.lang.Integer".java.util.Map$Entry#getKey()Ljava/lang/Object;*'
+%
+yearlyTeachersjava.util.Map$Entry2getKey()*
+2
+8*÷
+10^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaMO M(_£
+†
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaMO M(_
+%0java.util.Map"__id*#*!
+	Principal"
+allYearsTeachersƒ¡
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaMO M(j
+%1java.util.Set"'java.util.Map#entrySet()Ljava/util/Set;*
+
+%0java.util.Map2
+entrySet()*
+2*Õ
+1^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaY Y()"h
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.javaY Y(*
 ""B
-	Doctorado
+	Principal

@@ -1,10 +1,77 @@
 
-Maestria#Grado()I\
-R/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Student.java ("1*…
-1\
-R/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Student.java ("f
-\
-R/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Student.java (
-""B
-
-Maestria
+-Principal#calculateGrades(Ljava/util/List;Z)F^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java% %( "7*è
+2^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java/ /( ø
+º
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java/ /(r
+%5float"Principal#computeGrades(ZZFI)F*
+	Principal*
+""*
+""*
+""*
+"""h
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java/ /(s
+""*¢
+3^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java+ +(/Ñ
+Å
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java+ +(/
+	examGradePair"__id*
+""≠
+™
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java+ +(/
+	examGradePair"
+__arrayGet*!
+
+examsStudentsjava.util.List*
+""*
+2
+4*ü
+4^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java, ,(∫∑
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java, ,(/
+%2java.lang.Integer"Pair#first()Ljava/lang/Object;*
+
+	examGradePair2first()∫∑
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java,2 ,(D
+%3java.lang.Float"Pair#second()Ljava/lang/Object;*
+
+	examGradePair2second()∫∑
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java-# -(4
+%4java.lang.Integer"Pair#first()Ljava/lang/Object;*
+
+	examGradePair2first()*
+3*ó
+6^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java'1 '(M¨
+©
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java'1 '(O
+%1boolean")Principal#isHasToIncreaseOneExtraPoint()Z*
+	Principal*
+3*©
+7^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java& &(ª∏
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java& &($
+%0boolean"java.util.List#isEmpty()Z*!
+
+examsStudentsjava.util.List2	isEmpty()*
+6
+1*Õ
+1^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java1 1("h
+^
+T/Users/jose/Desktop/se/practica-calificada-2-joseortizm/src/main/java/Principal.java1 1(
+"":
+examsStudentsjava.util.List:
+""B
+	Principal
