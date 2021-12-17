@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+practica-calificada-2-joseortizm,default,Pregrado,9,0,0,0,4,0,2,0,2,0
+practica-calificada-2-joseortizm,default,Doctorado,11,0,0,0,4,0,2,0,2,0
+practica-calificada-2-joseortizm,default,Maestria,11,0,0,0,4,0,2,0,2,0
+practica-calificada-2-joseortizm,default,ProfesorTC,12,0,0,0,4,0,2,0,2,0
+practica-calificada-2-joseortizm,default,Administrativo,12,0,0,0,4,0,2,0,2,0
+practica-calificada-2-joseortizm,default,Teacher,0,12,0,0,0,4,0,1,0,1
+practica-calificada-2-joseortizm,default,ProfesorTP,3,6,0,0,1,3,1,1,1,1
+practica-calificada-2-joseortizm,default,Student,6,0,0,0,2,0,1,0,1,0
+practica-calificada-2-joseortizm,default,Principal,4,198,0,20,2,42,1,13,1,3
+practica-calificada-2-joseortizm,default,Pair,0,15,0,0,0,6,0,3,0,3
